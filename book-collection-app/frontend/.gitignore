@@ -1,3 +1,19 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Build outputs
+dist/
+dist-ssr/
+build/
+*.tsbuildinfo
+
+# Environment variables (uncomment in production)
+# .env
+# .env.local
+# .env.development
+# .env.production
+
 # Logs
 logs
 *.log
@@ -7,27 +23,32 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-.DS_Store
-dist
-dist-ssr
-coverage
-*.local
-
+# Testing
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
 /cypress/videos/
 /cypress/screenshots/
 
-# Editor directories and files
+# Editors and IDEs
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
 
-*.tsbuildinfo
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
-test-results/
-playwright-report/
+# Local development
+*.local
